@@ -25,8 +25,6 @@ datiIncidenza = dati
 dati = dati.query("unit == 'Number'")
 dati = dati.drop(columns=['DATAFLOW', 'LAST UPDATE', 'OBS_FLAG', 'freq'])
 dati.columns=['Unità', 'Attività', 'Nazione', 'Anno','Numero Incidenti']
-dati2020 = dati.query("Anno == 2020")
-
 #-----------------------------------------------------------------------------------------------------------------------------
 
 #Grafici Animati
