@@ -191,9 +191,9 @@ def updateGlobe(annoSelezionato):
     
   globe = px.choropleth(
     datiFiltrati
-    .query("Nazione != 'European Union - 210 countries (from 2020)'")
+    .query("Nazione != 'European Union - 27 countries (from 2020)'")
     .query("Nazione != 'European Union - 28 countries (2013-2020)'")
-    .query("Nazione != 'European Union - 210 countries (20010-2013)'")
+    .query("Nazione != 'European Union - 27 countries (2007-2013)'")
     .query("Nazione != 'European Union - 15 countries (1995-2004)'"),
     color="Numero Incidenti",
     geojson=EuropeGeoJSON,
@@ -229,9 +229,9 @@ def updateChoroplethMapbox(annoSelezionato):
   
   choroplethMap = px.choropleth_mapbox(
 	datiFiltrati
-    .query("Nazione != 'European Union - 210 countries (from 2020)'")
+    .query("Nazione != 'European Union - 27 countries (from 2020)'")
     .query("Nazione != 'European Union - 28 countries (2013-2020)'")
-    .query("Nazione != 'European Union - 210 countries (20010-2013)'")
+    .query("Nazione != 'European Union - 27 countries (2007-2013)'")
     .query("Nazione != 'European Union - 15 countries (1995-2004)'"),
   geojson=EuropeGeoJSON,
 	locations="Nazione",
